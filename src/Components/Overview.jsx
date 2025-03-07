@@ -6,7 +6,7 @@ const Overview = () => {
   const { lightMode } = useTheme(); 
 
   return (
-    <div className={`font-inter ${lightMode ? "bg-white text-black" : "bg-gray-800 text-white"} p-4 rounded mt-5`}>
+    <div className={`font-inter ${lightMode ? "bg-white text-black" : "bg-darkTheme-bg text-white"} px-20 pt-3 pb-6`}>
       <header className="mt-10 text-2xl font-semibold pb-8"> Overview - Today</header>
 
       <div className="grid sm:grid-cols-4 grid-rows-2 gap-7 grid-cols-1">

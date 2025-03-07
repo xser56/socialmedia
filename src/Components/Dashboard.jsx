@@ -5,7 +5,7 @@ const Dashboard = () => {
   const { lightMode, setLightMode } = useTheme(); // Use global theme state
 
   return (
-    <div className={`pt-10 ${lightMode ? "bg-lightTheme-bg text-lightTheme-textDarkGray" : "bg-darkTheme-bg text-white"}`}>
+    <div className={`px-20 pt-5 ${lightMode ? "bg-lightTheme-bg text-lightTheme-textDarkGray" : "bg-darkTheme-bg text-white"}`}>
       <div className="flex justify-between">
         {/* Header */}
         <header>

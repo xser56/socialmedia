@@ -14,11 +14,14 @@ function App() {
     return localStorage.getItem("theme") === "light";
   });
 
-  useEffect(() => {
-    if (lightMode) {
+  useEffect(() => 
+    {
+    if (lightMode) 
+    {
       document.documentElement.classList.add("light");
       localStorage.setItem("theme", "light");
-    } else {
+    } else 
+    {
       document.documentElement.classList.remove("light");
       localStorage.setItem("theme", "dark");
     }
