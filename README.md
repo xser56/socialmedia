@@ -1,7 +1,7 @@
-Name:
-Date:
-Project Name:
-Description:
+Name: Andrew Sayasing
+Date: 3/7/25
+Project Name: Social Media Dashboard React
+Description: built a social media dashboard in react using idfferent components. No backend
 # Peer Review: Robert G
 
 ## Major Issues
