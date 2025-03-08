@@ -1,11 +1,10 @@
 import "../App.css";
-import { useTheme } from "../App"; // Import the theme context
-
+import { useTheme } from "../App"; 
 const Dashboard = () => {
-  const { lightMode, setLightMode } = useTheme(); // Use global theme state
+  const { lightMode, setLightMode } = useTheme();
 
   return (
-    <div className={`px-20 pt-5 ${lightMode ? "bg-lightTheme-bg text-lightTheme-textDarkGray" : "bg-darkTheme-bg text-white"}`}>
+    <div className={`px-20 pt-5 ${lightMode ? "bg-lightTheme-bg" : "bg-darkTheme-bg text-white"}`}>
       <div className="flex justify-between">
         {/* Header */}
         <header>
@@ -35,12 +34,12 @@ const Dashboard = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid sm:grid-cols-4 gap-7 text-center grid-cols-1 font-inter">
+      <div className="grid sm:grid-cols-4 gap-7 text-center grid-cols-1 font-inter grid">
 
         {/* Card 1 */}
-        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-300 text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
+        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? " bg-lightTheme-cardBg hover:bg-slate-200 " : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
           <div className="absolute top-0 left-0 w-full h-1 bg-social-facebook"></div>
-          <div className="py-5 font-bold tracking-wider">
+          <div className={`py-5 font-bold tracking-wider ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>
             <img src="/images/icon-facebook.svg" alt="Facebook Icon" className="inline-block w-6 h-6 mr-3 mb-1" />
             @nathanf
           </div>
@@ -53,9 +52,9 @@ const Dashboard = () => {
         </div>
 
         {/* Card 2 */}
-        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-300 text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
+        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-200  text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
           <div className="absolute top-0 left-0 w-full h-1 bg-social-facebook"></div>
-          <div className="py-5 font-bold tracking-wider">
+          <div className={`py-5 font-bold tracking-wider ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>
             <img src="/images/icon-twitter.svg" alt="twitter Icon" className="inline-block w-6 h-6 mr-3 mb-1" />
             @nathanf
           </div>
@@ -68,9 +67,9 @@ const Dashboard = () => {
         </div>
 
         {/* Card 3 */}
-        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-300 text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-instagram"></div>
-          <div className="py-5 font-bold tracking-wider">
+        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-200  text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[hsl(37,97%,70%)] to-[hsl(329,70%,58%)]"></div>
+          <div className={`py-5 font-bold tracking-wider ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>
             <img src="/images/icon-instagram.svg" alt="Instagram Icon" className="inline-block w-6 h-6 mr-3 mb-1" />
             @realnathanf
           </div>
@@ -83,9 +82,9 @@ const Dashboard = () => {
         </div>
 
         {/* Card 4 */}
-        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-300 text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
+        <div className={`relative py-3 rounded-md cursor-pointer ${lightMode ? "bg-lightTheme-cardBg hover:bg-slate-200  text-black" : "bg-darkTheme-cardBg hover:bg-slate-600 text-white"}`}>
           <div className="absolute top-0 left-0 w-full h-1 bg-social-youtube"></div>
-          <div className="py-5 font-bold tracking-wider">
+          <div className={`py-5 font-bold tracking-wider ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>
             <img src="/images/icon-youtube.svg" alt="Youtube Icon" className="inline-block w-6 h-6 mr-3 mb-1" />
             Nathan F.
           </div>
@@ -97,7 +96,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Add the rest of your cards here... */}
       </div>
     </div>
   );

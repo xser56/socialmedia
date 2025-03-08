@@ -11,9 +11,10 @@ const Overview = () => {
 
       <div className="grid sm:grid-cols-4 grid-rows-2 gap-7 grid-cols-1">
         {/* Card 1 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Page Views</p>
+            <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Page Views</p>
+            
             <img src="/images/icon-facebook.svg" alt="Facebook Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -24,10 +25,10 @@ const Overview = () => {
             </p>
           </div>
         </div>
-{/* Card 2 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        {/* Card 2 */}
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Likes</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Likes</p>
             <img src="/images/icon-facebook.svg" alt="Facebook Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -40,9 +41,9 @@ const Overview = () => {
         </div>
 
         {/* Card 3 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Likes</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Likes</p>
             <img src="/images/icon-instagram.svg" alt="Instagram Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -57,9 +58,9 @@ const Overview = () => {
         
 
         {/* Card 4 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Profile Views</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Profile Views</p>
             <img src="/images/icon-instagram.svg" alt="isntagram Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -72,9 +73,9 @@ const Overview = () => {
         </div>
 
         {/* Card 5 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Retweets</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Retweets</p>
             <img src="/images/icon-twitter.svg" alt="Twitter Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -87,9 +88,9 @@ const Overview = () => {
         </div>
 
         {/* Card 6 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Likes</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Likes</p>
             <img src="/images/icon-twitter.svg" alt="Twitter Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -102,9 +103,9 @@ const Overview = () => {
         </div>
 
         {/* Card 7 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Likes</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Likes</p>
             <img src="/images/icon-youtube.svg" alt="Facebook Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
@@ -117,9 +118,9 @@ const Overview = () => {
         </div>
 
         {/* Card 8 */}
-        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black" : "bg-darkTheme-cardBg text-white"} hover:bg-slate-600`}>
+        <div className={`px-6 rounded-md shadow-md h-36 w-100 cursor-pointer ${lightMode ? "bg-lightTheme-cardBg text-black hover:bg-slate-200" : "bg-darkTheme-cardBg text-white hover:bg-slate-600"}`}>
           <div className="flex justify-between items-center pt-5">
-            <p className="font-extrabold">Total Views</p>
+          <p className={`font-extrabold ${lightMode ? "text-lightTheme-textDarkGray" : "text-darkTheme-text"}`}>Total Views</p>
             <img src="/images/icon-youtube.svg" alt="youtube Icon" className="w-6 h-6" />
           </div>
           <div className="flex justify-between items-center pt-10">
